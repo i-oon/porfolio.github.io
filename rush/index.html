@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ioon's porfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section id="header">
+        <nav>
+            
+            <a class="logo" href="#header" class="img-fluid">
+                <img src="images/logo.png" alt="logo"/>
+            </a>
+            <ul class="menu">
+                <li><a href="#header" class="active">Home </a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#resume">Resume</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100020143543410"class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/i.o.o.n/" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+        </nav>
+        <div class="header-heading"> 
+            <h3> Hi this is </h3>
+            <h1><span>Dsuttawe</span> </h1>
+            <p> i am a 17 years old student  <br/> from Kanjanapisek Wittayalai Nakornprathom School </p>
+           
+            <a class="header-btn" href="#about"> Get Started </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-box" class="img-fluid" data-aos="zoom-out-left"/>
+            <div class="about-image">
+                <img src="images/me1.gif" alt="me1-gif" >      
+            </div>
+        </div>
+        <div class="about-box" data-aos="zoom-out-right"/>
+            <div class="about-image">
+                <img src="images/me2.gif" alt="me2-gif" >
+            </div>
+        </div>
+        <div class="about-text">
+            <h2>Get to Know Me ! </h2>
+            <h3>My name is <span>Disthorn Suttawet</span></h3>
+            <p>I am now a student from grade 12 and my plan for the university is to get into the faculty of computer engineering at Mahidol University</p>
+            <button class="header-btn"> Read More </button>
+
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="resume-heading">
+            <h1> My Experiences and Skills </h1>
+            <p> activities and camps i attended </p>
+        </div>
+
+        <div class="resume-container" 
+        data-aos="fade-up"
+        data-aos-duration="1000">
+
+            <div class="resume-box">
+                    <div class="resume-image">
+                         <img src="images/meat42.jpg">
+                    </div>
+                    
+                    <div class="resume-text">
+                        <h4> Web Dev </h4> 
+                        <p> loollllllheheheeee</p>
+       
+                    </div>
+            </div>
+            
+            <div class="resume-box">
+                <div class="resume-image">
+                     <img src="images/resume2.gif">
+                </div>
+                <div class="resume-text">
+                    <h4> Web Dev </h4>
+                    <p> loollllllheheheeee</p>
+   
+                </div>
+            </div>
+
+            <div class="resume-box">
+                <div class="resume-image">
+                     <img src="images/meat422.jpg">
+                </div>
+                <div class="resume-text">
+                    <h4> Web Dev </h4>
+                    <p> loollllllheheheeee</p>
+   
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="contact-heading">
+            <h1> Contact Me ! </h1>
+            <p> Write an E-mail </p>
+        </div>
+        <form action="mailto:ioonza1d@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" id="name" placeholder="Type Your Name"/>
+            <input type="text" name="email" id="email" placeholder="Type Your E-mail"/>
+            <textarea name="message" id="message" placeholder="Type Your Message Here..."></textarea>
+            <input type="submit" value="Sent" onclick="sendMail()"/>
+        </form>
+        
+        <script>
+            const sendMail = () => {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                window.open(`mailto:ioonza1d@gmail.com?subject=a mail from${name+' '+email}&body=${message}`);
+                }
+        </script>
+
+        <br/>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100020143543410"class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/i.o.o.n/" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
